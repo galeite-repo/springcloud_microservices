@@ -2,6 +2,18 @@
 spring:
   application:
     name: mscartoes
+  # Configurações do banco de dados MySQL
+  datasource:
+    url: jdbc:mysql://192.168.0.170:3306/springdb
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+
+  # Configuração do JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   rabbitmq:
     host: localhost
     port: 5672

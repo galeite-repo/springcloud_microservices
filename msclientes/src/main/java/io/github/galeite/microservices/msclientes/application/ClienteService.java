@@ -2,10 +2,12 @@ package io.github.galeite.microservices.msclientes.application;
 
 import io.github.galeite.microservices.msclientes.domain.Cliente;
 import io.github.galeite.microservices.msclientes.infra.repository.ClienteRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
