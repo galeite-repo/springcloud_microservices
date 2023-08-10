@@ -1,0 +1,82 @@
+2023-08-09 09:36:50.356  INFO 1724 --- [main] i.g.g.m.m.MscartoesApplicationTests      : Starting MscartoesApplicationTests using Java 17.0.3.1 on IBM-PF401H48 with PID 1724 (started by 014073631 in C:\Users\014073631\www\java\microservices\projeto-ms\mscartoes)
+2023-08-09 09:36:50.361  INFO 1724 --- [main] i.g.g.m.m.MscartoesApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-08-09 09:36:53.028  INFO 1724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-09 09:36:53.238  INFO 1724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 2 JPA repository interfaces.
+2023-08-09 09:36:53.650  INFO 1724 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e5113ae0-b782-36cd-84a5-7d9532bf08b9
+2023-08-09 09:36:54.571  INFO 1724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-09 09:36:54.638  INFO 1724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-08-09 09:36:54.902  INFO 1724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-09 09:36:55.294  INFO 1724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-09 09:36:55.300  WARN 1724 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-08-09 09:36:55.906  INFO 1724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-09 09:36:55.932  INFO 1724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-08-09 09:36:56.795  INFO 1724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-09 09:36:56.809  INFO 1724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-09 09:36:58.014  WARN 1724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-09 09:37:01.825  INFO 1724 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-08-09 09:37:02.056  WARN 1724 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-09 09:37:02.073  INFO 1724 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-08-09 09:37:02.192  INFO 1724 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-08-09 09:37:02.263  INFO 1724 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#c1d9c40:0/SimpleConnection@7da4c956 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55109]
+2023-08-09 09:37:02.356  INFO 1724 --- [main] i.g.g.m.m.MscartoesApplicationTests      : Started MscartoesApplicationTests in 12.79 seconds (JVM running for 14.767)
+2023-08-09 09:37:02.689  INFO 1724 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-08-09 09:37:02.694  INFO 1724 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARTOES with eureka with status DOWN
+2023-08-09 09:37:02.717  INFO 1724 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-08-09 09:37:03.338  INFO 1724 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-08-09 09:37:03.349  INFO 1724 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2023-08-09 09:37:03.352  INFO 1724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-09 09:37:03.355  INFO 1724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-09 09:37:03.366  INFO 1724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-09 09:42:52.835  INFO 25644 --- [restartedMain] i.g.g.m.mscartoes.MscartoesApplication   : Starting MscartoesApplication using Java 17.0.7 on IBM-PF401H48 with PID 25644 (C:\Users\014073631\www\java\microservices\projeto-ms\mscartoes\target\classes started by 014073631 in C:\Users\014073631\www\java\microservices\projeto-ms\mscartoes)
+2023-08-09 09:42:52.893  INFO 25644 --- [restartedMain] i.g.g.m.mscartoes.MscartoesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-08-09 09:42:53.198  INFO 25644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-09 09:42:53.214  INFO 25644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-09 09:43:00.707  INFO 25644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-09 09:43:01.122  INFO 25644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 350 ms. Found 2 JPA repository interfaces.
+2023-08-09 09:43:05.375  INFO 25644 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e03d0a64-fa34-3884-ad56-c8ac155a4477
+2023-08-09 09:43:15.126  INFO 25644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-08-09 09:43:15.221  INFO 25644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-09 09:43:15.280  INFO 25644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-08-09 09:43:15.798  INFO 25644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-09 09:43:15.799  INFO 25644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 22509 ms
+2023-08-09 09:43:19.994  INFO 25644 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-09 09:43:20.248  INFO 25644 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-08-09 09:43:22.183  INFO 25644 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-09 09:43:22.867  INFO 25644 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-09 09:43:23.014  WARN 25644 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-08-09 09:43:24.310  INFO 25644 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-09 09:43:24.548  INFO 25644 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-08-09 09:43:26.979  INFO 25644 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-09 09:43:26.993  INFO 25644 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-09 09:43:29.109  WARN 25644 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-09 09:43:36.625  WARN 25644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-08-09 09:43:37.425  INFO 25644 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-08-09 09:43:37.567  WARN 25644 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-09 09:43:37.581  INFO 25644 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-08-09 09:43:37.891  INFO 25644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54452 (http) with context path ''
+2023-08-09 09:43:37.899  INFO 25644 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 54452
+2023-08-09 09:43:37.915  INFO 25644 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-08-09 09:43:38.035  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-08-09 09:43:38.067  INFO 25644 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-09 09:43:38.143  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-08-09 09:43:38.164  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-08-09 09:43:38.167  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-08-09 09:43:38.181  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-08-09 09:43:38.185  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-08-09 09:43:38.195  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-08-09 09:43:38.197  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-08-09 09:43:38.832  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-08-09 09:43:38.838  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-08-09 09:43:38.845  INFO 25644 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-09 09:43:38.854  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1691585018852 with initial instances count: 2
+2023-08-09 09:43:38.860  INFO 25644 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCARTOES with eureka with status UP
+2023-08-09 09:43:38.864  INFO 25644 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1691585018864, current=UP, previous=STARTING]
+2023-08-09 09:43:38.867  INFO 25644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARTOES/mscartoes:5a788c0af6b2cc10d8e694e63369d512: registering service...
+2023-08-09 09:43:39.059  INFO 25644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARTOES/mscartoes:5a788c0af6b2cc10d8e694e63369d512 - registration status: 204
+2023-08-09 09:43:39.249  INFO 25644 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-08-09 09:43:39.351  INFO 25644 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2297c24c:0/SimpleConnection@5b873169 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54455]
+2023-08-09 09:43:39.468  INFO 25644 --- [restartedMain] i.g.g.m.mscartoes.MscartoesApplication   : Started MscartoesApplication in 61.722 seconds (JVM running for 68.767)
+2023-08-09 09:45:46.028  INFO 25644 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-09 09:45:46.030  INFO 25644 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-09 09:45:46.043  INFO 25644 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2023-08-09 09:48:38.222  INFO 25644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

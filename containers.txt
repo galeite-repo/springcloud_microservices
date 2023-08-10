@@ -1,3 +1,8 @@
-docker run -it --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management
+docker run -d --name rabbitmq -it -p 5672:5672 -p 15672:15672 --network ms-network rabbitmq:3.9-management
+docker run -d --name keycloak -p 8082:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin --network ms-network quay.io/keycloak/keycloak:18.0.0 start-dev
 
-docker run -p 8082:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:18.0.0 start-dev
+docker run -d --name ms-eureka -p 8761:8761 --network ms-network ms-eureka
+docker run -d --name ms-gateway -p 8081:8081 --network ms-network -e EUREKA_SERVER=ms-eureka -e KEYCLOAK_SERVER=keycloak -e KEYCLOAK_PORT=8080 ms-gateway
+docker run -d --name ms-clientes --network ms-network -e EUREKA_SERVER=ms-eureka ms-clientes
+docker run -d --name ms-cartoes --network ms-network -e RABBITMQ_SERVER=rabbitmq -e EUREKA_SERVER=ms-eureka ms-cartoes
+docker run -d --name ms-avaliador-credito --network ms-network -e RABBITMQ_SERVER=rabbitmq -e EUREKA_SERVER=ms-eureka ms-avaliador-credito
